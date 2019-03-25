@@ -1,0 +1,36 @@
+PHP_CodeSniffer along with WordPress coding standards ruleset for phpcs is used to detect violations of a defined set of coding standards.
+
+1) phpcs is command line tool, instead of using windows bash it is recommended to use Git bash for this tutorial.
+
+2) First, check if Composer is already installed in your system by typing
+ `composer`
+ 
+in command prompt. If the composer is not installed go to getcomposer and install it.
+
+3) Install PHPCS by running following command in your terminal –
+
+`composer global require squizlabs/php_codesniffer`
+
+4) Install WordPress Coding Standards for PHP_CodeSniffer by command
+
+`composer global require wp-coding-standards/wpcs`
+
+5) Install PHP Compatibility Ruleset for phpcs
+
+`composer global require wimg/php-compatibility`
+
+6) Set Correct path for PHPCS rulesets.
+
+`composer global require dealerdirect/phpcodesniffer-composer-installer`
+
+7) Now you have installed and configured phpcs and WordPress coding standards rules with phpcs.
+
+8) Open your project in the terminal and If you don’t have already, add the phpcs ruleset to your project.
+
+9) Use the following command to run phpcs check.
+
+`phpcs`
+
+10) phpcs also comes with a beautifier which can fix simple errors automatically, run this with a command –
+
+`phpcbf`
